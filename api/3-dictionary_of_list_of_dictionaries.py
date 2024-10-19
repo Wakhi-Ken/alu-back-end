@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """
     python script that exports data in the JSON format
 """
@@ -21,4 +21,3 @@ if __name__ == "__main__":
             } for t in requests.get(url + "todos",
                                     params={"userId": u.get("id")}).json()]
             for u in users}, jsonfile)
-
